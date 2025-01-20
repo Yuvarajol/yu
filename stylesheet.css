@@ -36,31 +36,7 @@ header {
     margin-right: 12px;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-}
 
-.navbar a {
-    font-size: 18px;
-    padding: 15px 22px;
-    color: #333;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 30px;
-    transition: all 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #4169e1;
-    border-bottom: 2px solid #4169e1;
-}
-
-#menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-}
 
 .home {
     display: flex;
