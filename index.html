@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Stock Analyzer Tool</title> 
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="img/stock-logo.png" alt="Stock Analyzer Logo"></a>
+        <a href="#" class="logo header-logo"><img src="img/stock-logo.png" alt="Stock Analyzer Logo"></a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
@@ -38,7 +35,7 @@
     </section>
 
     <section class="stock-analysis" id="analysis">
-        <div class="heading">
+        <div class="section-heading">
             <span>Stock Tools</span>
             <h1>Analyze Stocks</h1>
         </div>
@@ -68,7 +65,7 @@
     </section>
 
     <section class="alerts" id="alerts">
-        <div class="heading">
+        <div class="section-heading">
             <span>Stay Updated</span>
             <h1>Get Stock Alerts</h1>
         </div>
@@ -85,7 +82,7 @@
     </section>
 
     <section class="app" id="app">
-        <div class="heading">
+        <div class="section-heading">
             <span>Our App</span>
             <h1>Download Our Stock Analyzer App</h1>
         </div>
@@ -102,30 +99,45 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/stock-background.jpg" alt="Stock Analyzer">
+        <div class="section-heading">
+            <span>About Us</span>
+            <h1>Who We Are</h1>
         </div>
-        <div class="about-text">
-            <h2>About Our Stock Analyzer Tool</h2>
-            <p>Our Stock Analyzer Tool is designed to help investors make data-driven decisions. By providing detailed stock analysis, trends, and predictions, our platform empowers you to stay ahead in the market. Whether you're a beginner or an experienced investor, we have the tools you need to succeed.</p>
-            <a href="#" class="btn">Learn More</a>
+        <div class="container">
+            <div class="about-img">
+                <img src="img/about.jpg" alt="About Stock Analyzer Tool">
+            </div>
+            <div class="about-text">
+                <h2>Innovative Stock Analysis Platform</h2>
+                <p>Our platform empowers traders and investors to make better decisions by providing powerful tools and actionable insights on the stock market.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <footer>
         <div class="social">
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#" class="bx bxl-facebook"></a>
+            <a href="#" class="bx bxl-twitter"></a>
+            <a href="#" class="bx bxl-linkedin"></a>
+            <a href="#" class="bx bxl-instagram"></a>
         </div>
         <div class="links">
-            <a href="#">Stock FAQs</a>
-            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
+            <a href="#">FAQ</a>
         </div>
-        <p>&#169; All Rights Reserved</p>
-    </section>
+        <p>&copy; 2025 Stock Analyzer Tool. All rights reserved.</p>
+    </footer>
 
-    <script src="main.js"></script>
+    <script>
+        // JavaScript for mobile menu toggle
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
