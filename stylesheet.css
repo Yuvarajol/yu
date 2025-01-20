@@ -313,3 +313,61 @@ footer p {
         margin: 0 auto;
     }
 }
+.stock-analysis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 15%;
+}
+
+.stock-analysis .text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.stock-analysis .text h1 {
+    font-size: 2.5rem;
+    color: #4169e1;
+    margin-bottom: 15px;
+}
+
+.stock-analysis .text p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.stock-analysis .img {
+    flex: 1;
+    text-align: center;
+}
+
+.stock-analysis .img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the layout looks good on smaller screens */
+@media screen and (max-width: 768px) {
+    .stock-analysis {
+        padding: 40px 10%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stock-analysis .text {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .stock-analysis .img {
+        margin-top: 30px;
+    }
+}
+
