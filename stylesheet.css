@@ -21,7 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 15%;
+    padding: 20px 10%;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
@@ -32,24 +32,22 @@ header {
 }
 
 .logo img {
-    width: 45px;
-    margin-right: 12px;
+    width: 40px;
+    margin-right: 10px;
 }
 
-/* Navbar Section */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 
 .navbar a {
-    font-size: 18px;
-    padding: 15px 22px;
+    font-size: 16px;
+    padding: 12px 18px;
     color: #333;
     font-weight: 600;
     text-transform: uppercase;
-    margin-left: 30px;
+    margin-left: 20px;
     transition: all 0.3s ease;
 }
 
@@ -58,43 +56,206 @@ header {
     border-bottom: 2px solid #4169e1;
 }
 
-/* Hamburger Menu Icon (Mobile view) */
 #menu-icon {
-    display: none; /* Hidden by default on larger screens */
+    display: none;
     font-size: 30px;
-    color: #333;
     cursor: pointer;
 }
 
-.navbar.active {
+.home {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
+    justify-content: space-between;
+    padding: 120px 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.home-text h1 {
+    font-size: 3rem;
+    color: #4169e1;
+    margin-bottom: 15px;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: 2px solid #4169e1;
+    border-radius: 50px;
     background: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: #4169e1;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar a {
-    margin: 15px 0;
+.btn:hover {
+    background-color: #4169e1;
+    color: #fff;
 }
 
-/* Media Queries for smaller screens */
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading span {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.section-heading h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.tools-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tool-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tool-box:hover {
+    transform: translateY(-10px);
+}
+
+.tool-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.tool-box h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.alerts,
+.app,
+.about {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.alerts-img,
+.app-img,
+.about-img {
+    margin-top: 30px;
+}
+
+.alerts .btn,
+.app .btn {
+    margin-top: 20px;
+}
+
+.alerts-text h2,
+.app-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.alerts-text p,
+.app-text p,
+.about-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.about-img img,
+.app-img img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.social a {
+    font-size: 30px;
+    color: #333;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #4169e1;
+}
+
+.links a {
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+    margin: 10px 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #4169e1;
+}
+
+footer {
+    background-color: #fff;
+    padding: 40px 10%;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Media Queries */
 @media screen and (max-width: 992px) {
     header {
-        padding: 20px 10%;
+        padding: 15px 5%;
     }
 
     .home {
-        padding: 140px 10%;
+        padding: 100px 5%;
         flex-direction: column;
+    }
+
+    .home-img {
+        margin-top: 30px;
     }
 
     .tools-container {
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
     }
 
     .tool-box {
@@ -103,61 +264,52 @@ header {
     }
 
     .section-heading h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .social a {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .links a {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    /* Navbar visible on smaller screens */
+    .logo img {
+        width: 35px;
+    }
+
     .navbar {
         display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: #fff;
-        padding: 20px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     #menu-icon {
-        display: block; /* Show hamburger menu icon */
-        color: #333;
-        font-size: 30px;
-        cursor: pointer;
+        display: block;
     }
 
     .navbar.active {
         display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     .navbar a {
-        margin: 10px 0;
-        font-size: 18px;
+        margin: 15px 0;
     }
 
-    /* Stock analysis section for mobile */
-    .stock-analysis {
-        padding: 40px 10%;
+    .tools-container {
         flex-direction: column;
-        align-items: center;
     }
 
-    .stock-analysis .text {
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .stock-analysis .img {
-        margin-top: 30px;
+    .tool-box {
+        width: 90%;
+        margin: 0 auto;
     }
 }
