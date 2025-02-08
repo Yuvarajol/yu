@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ body {
     color: #333;
 }
 
+/* Header Section */
 header {
     position: fixed;
     top: 0;
@@ -26,12 +28,7 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.header-logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
+.header-logo img {
     width: 40px;
     margin-right: 10px;
 }
@@ -62,17 +59,13 @@ header {
     cursor: pointer;
 }
 
+/* Home Section */
 .home {
     display: flex;
     justify-content: space-between;
     padding: 120px 10%;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.home-text {
-    flex: 1;
-    padding-right: 20px;
 }
 
 .home-text h1 {
@@ -93,6 +86,7 @@ header {
     border-radius: 10px;
 }
 
+/* Buttons */
 .btn {
     padding: 12px 25px;
     border: 2px solid #4169e1;
@@ -110,22 +104,7 @@ header {
     color: #fff;
 }
 
-.section-heading {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-heading span {
-    font-size: 1.2rem;
-    color: #888;
-}
-
-.section-heading h1 {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: 600;
-}
-
+/* Stock Tools Section */
 .tools-container {
     display: flex;
     justify-content: space-between;
@@ -154,28 +133,12 @@ header {
     margin-bottom: 20px;
 }
 
-.tool-box h2 {
-    font-size: 1.4rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
+/* Alerts, App, About Sections */
 .alerts,
 .app,
 .about {
     padding: 60px 10%;
     text-align: center;
-}
-
-.alerts-img,
-.app-img,
-.about-img {
-    margin-top: 30px;
-}
-
-.alerts .btn,
-.app .btn {
-    margin-top: 20px;
 }
 
 .alerts-text h2,
@@ -193,38 +156,7 @@ header {
     margin-bottom: 25px;
 }
 
-.about-img img,
-.app-img img {
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.social a {
-    font-size: 30px;
-    color: #333;
-    margin: 0 15px;
-    transition: color 0.3s;
-}
-
-.social a:hover {
-    color: #4169e1;
-}
-
-.links a {
-    display: inline-block;
-    font-size: 14px;
-    color: #888;
-    margin: 10px 15px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.links a:hover {
-    color: #4169e1;
-}
-
+/* Footer */
 footer {
     background-color: #fff;
     padding: 40px 10%;
@@ -262,18 +194,6 @@ footer p {
         width: 80%;
         margin: 0 auto;
     }
-
-    .section-heading h1 {
-        font-size: 2rem;
-    }
-
-    .social a {
-        font-size: 25px;
-    }
-
-    .links a {
-        font-size: 13px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -302,14 +222,5 @@ footer p {
 
     .navbar a {
         margin: 15px 0;
-    }
-
-    .tools-container {
-        flex-direction: column;
-    }
-
-    .tool-box {
-        width: 90%;
-        margin: 0 auto;
     }
 }
