@@ -130,14 +130,19 @@
         <p>&copy; 2025 Stock Analyzer Tool. All rights reserved.</p>
     </footer>
 
-    <script>
-        // JavaScript for mobile menu toggle
-        const menuIcon = document.getElementById('menu-icon');
-        const navbar = document.querySelector('.navbar');
-
-        menuIcon.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-        });
-    </script>
+   <script>
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+    
+    menu.onclick = () => {
+        menu.classList.toggle('bx-x'); // Toggle the 'bx-x' class for the close icon
+        navbar.classList.toggle('active'); // Toggle the 'active' class for the navbar
+    };
+    
+    window.onscroll = () => {
+        menu.classList.remove('bx-x'); // Remove the 'bx-x' class when scrolling
+        navbar.classList.remove('active'); // Remove the 'active' class when scrolling
+    };
+</script>
 </body>
 </html>
