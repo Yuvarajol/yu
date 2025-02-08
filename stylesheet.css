@@ -9,6 +9,7 @@
 body {
     background: #f4f8fc;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header Section */
@@ -24,11 +25,21 @@ header {
     padding: 20px 10%;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition for header */
+}
+
+header:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .header-logo img {
     width: 40px;
     margin-right: 10px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.header-logo img:hover {
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
 }
 
 .navbar {
@@ -43,18 +54,24 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     margin-left: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth transition for links */
 }
 
 .navbar a:hover {
     color: #4169e1;
     border-bottom: 2px solid #4169e1;
+    transform: translateY(-5px); /* Slight upward movement on hover */
 }
 
 #menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth rotation effect */
+}
+
+#menu-icon:hover {
+    transform: rotate(90deg); /* Rotate icon on hover */
 }
 
 /* Home Section */
@@ -70,18 +87,22 @@ header {
     font-size: 3rem;
     color: #4169e1;
     margin-bottom: 15px;
+    transition: color 0.3s ease; /* Smooth color change */
 }
 
-.home-text h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 30px;
+.home-text h1:hover {
+    color: #ff4d4d; /* Change color on hover */
 }
 
 .home-img img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.home-img img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
 }
 
 /* Buttons */
@@ -94,12 +115,13 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease; /* Smooth transition for buttons */
 }
 
 .btn:hover {
     background-color: #4169e1;
     color: #fff;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 /* Stock Tools Section */
@@ -118,17 +140,23 @@ header {
     width: 30%;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
 .tool-box:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* Lift box on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .tool-box img {
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.tool-box img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
 }
 
 /* Alerts, App, About Sections */
@@ -144,6 +172,12 @@ header {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.alerts-text h2:hover,
+.app-text h2:hover {
+    color: #4169e1; /* Change color on hover */
 }
 
 .alerts-text p,
@@ -152,6 +186,13 @@ header {
     font-size: 1.1rem;
     color: #666;
     margin-bottom: 25px;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.alerts-text p:hover,
+.app-text p:hover,
+.about-text p:hover {
+    color: #333; /* Darken text on hover */
 }
 
 /* Footer */
@@ -162,10 +203,36 @@ footer {
     font-size: 14px;
     color: #888;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition for footer */
 }
 
-footer p {
-    margin-top: 20px;
+footer:hover {
+    box-shadow: 0 -6px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.social a {
+    font-size: 30px;
+    color: #333;
+    margin: 0 15px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.social a:hover {
+    color: #4169e1;
+    transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+.links a {
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+    margin: 10px 15px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.links a:hover {
+    color: #4169e1; /* Change color on hover */
 }
 
 /* Media Queries */
@@ -220,5 +287,20 @@ footer p {
 
     .navbar a {
         margin: 15px 0;
+    }
+}
+
+/* Additional Media Query Effects */
+@media screen and (max-width: 768px) {
+    .home-text h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .home-img img {
+        width: 100%; /* Ensure full-width images */
+    }
+
+    .tool-box {
+        width: 100%; /* Full-width tool boxes */
     }
 }
